@@ -50,7 +50,7 @@ label start:
 
     softie_nvl "Once you add a story, pictures, and music, you can release it to the world!"
 
-    softie_nvl "Testing gitignore out!"
+    softie_nvl "Testing!"
 
     user_nvl "I'm the other kid texting right now.."
 
@@ -58,6 +58,20 @@ label start:
 
     nvl_narrator "I have no clue how this works tbh"
 
+    menu:
+
+        "What should you respond with?"
+
+        "To ask her right away.":
+
+            jump D4RK_mad
+
+        "To ask her later.":
+
+            jump D4RK_thirsty
+
+    label ending:
+        return
     # This ends the game.
 
-    return
+
