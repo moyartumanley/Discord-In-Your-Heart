@@ -73,9 +73,17 @@ label start:
     edater_nvl "uh oh didnt mean to ping the beast lmao"
 
     scene discord_darkgrey
+    with Dissolve (0.6)
     show ban_msg
+    with Dissolve (0.6)
+
+    pause(3.5)
 
     "Uh Oh! Someone just got banned. Send in an appeal to one of the mods?"
+
+    hide ban_msg
+    scene black
+    with Dissolve (0.25)
 
     menu meet_the_mods:
 
@@ -83,22 +91,14 @@ label start:
             jump appeal
 
         "There are other things in life more important than Discord. Go Outside!":
-            jump ending
+            jump outdoors
 
-        #"What should you respond with?"
-
-        #"To ask her right away.":
-
-            #jump D4RK_mad
-
-        #"To ask her later.":
-
-            #jump D4RK_thirsty
     label appeal:
+        #maybe add ban appeal here or in a different file
         nvl_narrator "ok"
     return
     
-    label ending:
+    label outdoors:
         hide ban_msg
         "You turn off your phone and go outside, and let the sun hit your face."
         "Unfortunately, you have a lack of experience in navigating the outside world"
@@ -106,8 +106,12 @@ label start:
         "You have been hit by a car. Given that you are uninsured and unwilling to call for an ambulance, you die of your injuries."
         show death
         with Dissolve (1.5)
-        "Try again!"
-        return
+        "choose again :3"
+
+        hide death
+        scene black
+
+        jump meet_the_mods 
     # This ends the game.
 
 
