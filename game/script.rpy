@@ -50,6 +50,8 @@ label start:
 
     softie_nvl "Once you add a story, pictures, and music, you can release it to the world!"
 
+    softie_nvl "Testing gitignore out!"
+
     user_nvl "I'm the other kid texting right now.."
 
     user_nvl "I'm a double texter"
