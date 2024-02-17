@@ -88,7 +88,9 @@ label start:
     menu meet_the_mods:
 
         "Plead with one of the mods":
-            jump appeal
+            #jump appeal
+            call screen eddi_screen
+         
 
         "There are other things in life more important than Discord. Go Outside!":
             jump outdoors
