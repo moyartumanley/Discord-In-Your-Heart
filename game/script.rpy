@@ -8,8 +8,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-
 define softie_nvl = Character("snugglebunni", kind=nvl, image="softie.png", callback=Discord_Ping)
 define edater_nvl = Character("eddi", kind=nvl, image="edater.png", callback=Discord_Ping)
 define incel_nvl = Character("D4RK", kind=nvl, image="incel.png", callback=Discord_Ping)

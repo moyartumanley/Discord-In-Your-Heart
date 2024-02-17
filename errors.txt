@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 74: menu statement expects a non-empty block.
-    menu meet_the_mods:
-        ^
-
-File "game/script.rpy", line 76: expected statement.
-    set menuset
-               ^
-
-File "game/script.rpy", line 79: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    "Plead with one of the mods":
-    ^
+File "game/script.rpy", line 107: expected statement.
+    renpy.movie_cutscene(death, delay=None, loops=0, stop_music=True)
+                                                                     ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sat Feb 17 13:30:47 2024
+Sat Feb 17 14:31:44 2024
