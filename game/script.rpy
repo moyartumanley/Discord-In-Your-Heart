@@ -22,6 +22,11 @@ define config.nvl_adv_transition = Dissolve(0.3)
 
 define nvl_mode = "phone"
 
+#image variables
+image death ="You Died.jpg"
+image ban_msg = "ban message.png"
+image discord_darkgrey = "#2D2F34"
+
 #SetScreenVariable = renpy.input("What is your name?", "neet246", length=32).strip()
 
 # The game starts here.
@@ -49,36 +54,59 @@ label start:
 
     # These display lines of dialogue.
     label intro:
-    "You're in your favorite discord server, populated with fellow chronically online (terminally online even) internet dwellers."
-    "Today's a good day. Your messages are getting ~5 reactions each with at least one being a laughing emoji. You Are On Cloud Nine!"
-    "But perhaps you get a little too bold.. and decide to post a meme"
-    "In"
-    "General"
-    user_nvl "{image=EileenSelfieSmall.png}"
+    nvl_narrator "You're in your favorite discord server, populated with fellow chronically online (terminally online even) internet dwellers."
+    nvl_narrator "Today's a good day. Your messages are getting ~5 reactions each with at least one being a laughing emoji. You Are On Cloud Nine!"
+    nvl_narrator "But perhaps you get a little too bold.. and decide to post a meme"
+    nvl_narrator "In" with vpunch
+    nvl_narrator "General" with vpunch
 
-    softie_nvl "You've created a new Ren'Py game."
+    user_nvl "{image=hellochat.png}"
 
-    softie_nvl "Once you add a story, pictures, and music, you can release it to the world!"
+    nvl_narrator "You've flown too close to the sun. Now the mods are on you fr."
 
-    user_nvl "I'm the other kid texting right now.."
+    softie_nvl "a reminder! please no memes in gen chat!! (>_<)"
 
-    user_nvl "I'm a double texter"
+    edater_nvl "yah it makes @D4RK sad"
 
-    nvl_narrator "I have no clue how this works tbh"
+    incel_nvl "This is the third time you have done this @[username]. If you can't follow the simplest of rules, then we're going to have to ban you."
 
-    menu:
+    edater_nvl "uh oh didnt mean to ping the beast lmao"
 
-        "What should you respond with?"
+    scene discord_darkgrey
+    show ban_msg
 
-        "To ask her right away.":
+    "Uh Oh! Someone just got banned. Send in an appeal to one of the mods?"
 
-            jump D4RK_mad
+    menu meet_the_mods:
 
-        "To ask her later.":
+        "Plead with one of the mods":
+            jump appeal
 
-            jump D4RK_thirsty
+        "There are other things in life more important than Discord. Go Outside!":
+            jump ending
 
+        #"What should you respond with?"
+
+        #"To ask her right away.":
+
+            #jump D4RK_mad
+
+        #"To ask her later.":
+
+            #jump D4RK_thirsty
+    label appeal:
+        nvl_narrator "ok"
+    return
+    
     label ending:
+        hide ban_msg
+        "You turn off your phone and go outside, and let the sun hit your face."
+        "Unfortunately, you have a lack of experience in navigating the outside world"
+        "BANG!!!" with hpunch
+        "You have been hit by a car. Given that you are uninsured and unwilling to call for an ambulance, you die of your injuries."
+        show death
+        with Dissolve (1.5)
+        "Try again!"
         return
     # This ends the game.
 
