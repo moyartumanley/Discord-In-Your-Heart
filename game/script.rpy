@@ -32,6 +32,9 @@ label start:
     window hide
     $ username = renpy.input("What is your discord user? (or name if you're bold like that)")
     $ username = username.strip()
+
+    
+
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -45,12 +48,17 @@ label start:
     # show eileen happy
 
     # These display lines of dialogue.
+    label intro:
+    "You're in your favorite discord server, populated with fellow chronically online (terminally online even) internet dwellers."
+    "Today's a good day. Your messages are getting ~5 reactions each with at least one being a laughing emoji. You Are On Cloud Nine!"
+    "But perhaps you get a little too bold.. and decide to post a meme"
+    "In"
+    "General"
+    user_nvl "{image=EileenSelfieSmall.png}"
 
     softie_nvl "You've created a new Ren'Py game."
 
     softie_nvl "Once you add a story, pictures, and music, you can release it to the world!"
-
-    softie_nvl "Testing!"
 
     user_nvl "I'm the other kid texting right now.."
 
