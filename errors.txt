@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/PhoneTexting.rpy", line 145: Line is indented, but the preceding color statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    text_align 1.0
-    ^
+File "game/script.rpy", line 12: expected statement.
+    SetScreenVariable = renpy.input("What is your name?", "neet246", length=32).strip()
+                      ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sat Feb 17 11:02:43 2024
+Sat Feb 17 11:55:18 2024
