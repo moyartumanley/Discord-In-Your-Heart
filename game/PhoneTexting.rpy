@@ -86,11 +86,7 @@ screen nvl_phonetext(dialogue,items):
                         at message_narrator
             null height 30
         else:
-           
-            if d.who == MC_Name:
-                $ message_frame = "phone_send_frame.png"
-            else:
-                $ message_frame = "phone_received_frame.png"
+            $ message_frame = "#424549"
 
             hbox:
                 spacing 10
@@ -117,10 +113,7 @@ screen nvl_phonetext(dialogue,items):
 
                     frame:
                         padding (20,20)
-                        
-
-                        background Frame(message_frame, 23,23,23,23)
-                        # xsize 750
+                        background Frame(message_frame)
 
                         if d.current and len(items)==0:
                             if d.who == MC_Name:
@@ -130,18 +123,10 @@ screen nvl_phonetext(dialogue,items):
 
                         text d.what:
                             pos (0,0)
-                            # xsize 750
+                            xsize 1632
                             slow_cps False
                             size 45
-                            
-
-                            if d.who == MC_Name :
-                                color "#FFF"
-                                xanchor 1.0
-                                xpos 1.0
-                            else:
-                                color "#000"
-
+                            color "#FFF" #Text Color
                                 
                             id d.what_id
         $ previous_d_who = d.who
@@ -151,9 +136,7 @@ style phoneFrame is default
 
 style phoneFrame_frame:
     # background "bg room.jpg"
-    background "#006"
-    foreground "phone_foreground.png"
-    
+    background "#424549"    
     yfill True
     xfill True
     ysize 1080
