@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/PhoneTexting.rpy", line 95: Indentation mismatch.
+File "game/PhoneTexting.rpy", line 145: Line is indented, but the preceding color statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    text_align 1.0
+    ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sat Feb 17 08:08:05 2024
+Sat Feb 17 11:02:43 2024

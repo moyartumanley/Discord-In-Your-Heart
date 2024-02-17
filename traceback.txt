@@ -1,28 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 8, in script
-    define n_nvl = Character("Nighten", kind=nvl, image="nighten", callback=Discord_Ping)
-  File "game/script.rpy", line 8, in <module>
-    define n_nvl = Character("Nighten", kind=nvl, image="nighten", callback=Discord_Ping)
-NameError: name 'Discord_Ping' is not defined
+  File "game/script.rpy", line 43, in script
+    n_evl "I'm a double texter"
+Exception: Sayer 'n_evl' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 8, in script
-    define n_nvl = Character("Nighten", kind=nvl, image="nighten", callback=Discord_Ping)
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 2219, in execute
-    self.set()
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 2233, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 8, in <module>
-    define n_nvl = Character("Nighten", kind=nvl, image="nighten", callback=Discord_Ping)
-NameError: name 'Discord_Ping' is not defined
+  File "game/script.rpy", line 43, in script
+    n_evl "I'm a double texter"
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 2557, in execute
+    Say.execute(self)
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "/Volumes/renpy-8.2.0-sdk/renpy-8.2.0-sdk/renpy/ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'n_evl' is not defined.
 
-macOS-13.5.2-arm64-arm-64bit arm64
+macOS-14.1.2-arm64-arm-64bit arm64
 Ren'Py 8.2.0.24012702
 Discord In Your Heart 1.0
-Sat Feb 17 08:06:42 2024
+Sat Feb 17 10:59:00 2024

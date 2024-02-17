@@ -94,9 +94,6 @@ screen nvl_phonetext(dialogue,items):
 
             hbox:
                 spacing 10
-                if d.who == MC_Name:
-                    box_reverse True
-                    xalign 1.0
                 
                 #If this is the first message of the character, show an icon
                 if previous_d_who != d.who:
@@ -140,7 +137,6 @@ screen nvl_phonetext(dialogue,items):
 
                             if d.who == MC_Name :
                                 color "#FFF"
-                                text_align 1.0
                                 xanchor 1.0
                                 xpos 1.0
                             else:

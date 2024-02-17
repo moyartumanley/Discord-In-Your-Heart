@@ -40,6 +40,8 @@ label start:
 
     n_nvl "I'm the other kid texting right now.."
 
+    n_nvl "I'm a double texter"
+
     nvl_narrator "I have no clue how this works tbh"
 
     # This ends the game.
