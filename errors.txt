@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/test.rpy", line 38: invalid syntax
-        global intro_0 = Node("You're in the testing stage now", test_nvl)
-                        ^
+File "game/script.rpy", line 43: choice menuitem expects a non-empty block.
+    "I Am Serious!":
+                    ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sun Feb 18 11:05:48 2024
+Sun Feb 18 12:39:30 2024

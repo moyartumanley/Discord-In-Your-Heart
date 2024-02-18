@@ -83,7 +83,7 @@ screen nvl_phonetext(dialogue,items):
                     xsize 650
                     text_align 0.5
                     italic True
-                    size 40
+                    size 38
                     slow_cps False
                     id d.what_id
                     if d.current and len(items)==0:
@@ -97,8 +97,18 @@ screen nvl_phonetext(dialogue,items):
                 
                 #If this is the first message of the character, show an icon
                 if previous_d_who != d.who:
-                    if d.who == MC_Name:
-                        $ message_icon = "phone_send_icon.png"
+                    if d.who == username:
+                        $ message_icon = pfp
+
+                    elif d.who == incel_nvl.name:
+                        $ message_icon = "incel.png"
+
+                    elif d.who == softie_nvl.name:
+                        $ message_icon = "softie.png"    
+
+                    elif d.who == edater_nvl.name:
+                        $ message_icon = "edater.png"        
+
                     else:
                         $ message_icon = "phone_received_icon.png"
 
@@ -113,7 +123,7 @@ screen nvl_phonetext(dialogue,items):
                     yalign 1.0
                     if d.who != MC_Name and previous_d_who != d.who:
                         text d.who:
-                            size 30
+                            size 38
 
                     frame:
                         padding (20,20)
@@ -129,7 +139,7 @@ screen nvl_phonetext(dialogue,items):
                             pos (0,0)
                             xsize 1632
                             slow_cps False
-                            size 45
+                            size 36
                             color "#FFF" #Text Color
                                 
                             id d.what_id

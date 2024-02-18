@@ -8,9 +8,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define softie_nvl = Character("snugglebunni", kind=nvl, image="softie.jpg", callback=Discord_Ping)
-define edater_nvl = Character("eddi", kind=nvl, image="edater.jpg", callback=Discord_Ping)
-define incel_nvl = Character("D4RK", kind=nvl, image="incel.jpg", callback=Discord_Ping)
+define softie_nvl = Character("snugglebunni", kind=nvl, image="softie.pmg", callback=Discord_Ping)
+define edater_nvl = Character("eddi", kind=nvl, image="edater.png", callback=Discord_Ping)
+define incel_nvl = Character("D4RK", kind=nvl, image="incel.png", callback=Discord_Ping)
 
 #removed ping for YN since methinks pings only occur when other ppl msg u
 define user_nvl = Character("[username]", kind=nvl, image="user.png")
@@ -36,6 +36,18 @@ label start:
     window hide
     $ username = renpy.input("What is your discord user? (or name if you're bold like that)")
     $ username = username.strip()
+
+    "Now it's time to choose your pfp! Which choice best represents you as a person?"
+
+    menu pfp:
+        "I Am Serious!":
+            $ pfp = "serious.png"
+
+        "im silly :P":
+            $ pfp = "silly.png"
+
+        "ive been banned from several servers. with each ban i create a new gmail account to rejoin as alt to continue my acts of torment. i have 30 gmail accounts. not even god can stop me from producing the levels of troll that i unleash onto unsuspecting individuals online.":
+            $ pfp = "troll.png"
 
     # These display lines of dialogue.
     label intro:
