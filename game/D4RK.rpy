@@ -3,6 +3,9 @@ label D4RK_intro:
    user_nvl "is it a crime to post gifs in gen? i was just having fun dude…"
    incel_nvl "You dare speak to me after not following the rules I laid out so explicitly? Well, newsflash bud, you can beg and cry and complain all you want… but that isn’t going to get you back into {b}my{/b} server."
 
+   jump pick_another_mod
+
+label lock_in_D4RK:
    nvl_narrator "You remember all the fun times you had in that server, the people you met, the funny pinned messages, the server stickers… the gifs that eventually led to you getting banned. You can’t give that up!"
 
    user_nvl "wait!!!!!" with hpunch
@@ -20,9 +23,6 @@ label D4RK_intro:
          jump gf_quest
       "No discord server is worth this… go outside and touch grass":
          jump D4RK_outside
-      "Talk to a different mod "if softie_talk == False or edater_talk == False:
-         jump pick_another_mod
-
 
 label gf_quest: #rizz label
    user_nvl "what the fuck is a girlfriend quest"

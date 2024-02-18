@@ -45,7 +45,7 @@ label start:
         "im silly :P":
             $ pfp = "silly.png"
 
-        "ive been banned from several servers. with each ban i create a new gmail account to rejoin as alt to continue my acts of torment. i have 30 gmail accounts. not even god can stop me from producing the levels of troll that i unleash onto unsuspecting individuals online.":
+        "ive been banned from several servers. with each ban, i create a new gmail account to make alts for continuing my acts of torment. i have 30 gmail accounts. not even god can stop me from producing the levels of troll that i unleash onto unsuspecting individuals online.":
             $ pfp = "troll.png"
 
     # These display lines of dialogue.

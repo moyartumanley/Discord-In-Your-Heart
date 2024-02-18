@@ -65,7 +65,7 @@ label final_pick:
             jump sb_rizz
         "D4RK":
             $ incel_talk = True
-            jump gf_quest
+            jump lock_in_D4RK
         "eddi":
             $ edater_talk = True
             jump eddi_final
