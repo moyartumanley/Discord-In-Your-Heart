@@ -16,7 +16,7 @@ label appeal:
         "The question is... which mod?"
 
         "snugglebunny":
-            jump appeal
+            jump sb_intro
         "D4RK":
             jump appeal
         "eddi":
