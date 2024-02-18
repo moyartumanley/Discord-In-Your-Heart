@@ -40,9 +40,6 @@ label eddi_intro:
         "Beg to be unbanned":
             jump eddi_pls
 
-    jump outdoors
-
-
 
 # LABEL : EDDI_WHO ================================================
 label eddi_who:
@@ -108,7 +105,7 @@ label eddi_curious:
 
 
 # LABEL : EDDI_PICK ================================================
-    label eddi_pick:
+    label eddi_final:
     "You decide that eddi is your best bet to getting unbanned." 
     "You just need to take it up a notch and get him on your side." 
     "Let's rizz him up!!" 

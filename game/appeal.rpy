@@ -44,6 +44,7 @@ label appeal:
 label pick_another_mod: 
     nvl clear
     nvl_narrator "The conversation is going nowhere... You decide to appeal to another mod."
+    nvl clear
 
     menu:
         "snugglebunny" if softie_talk == False:
@@ -63,17 +64,18 @@ label pick_another_mod:
             jump final_pick
 
 label final_pick:
+    nvl clear
     "Pick one mod to rizz up:"
     menu:
         "snugglebunny":
             $ softie_talk = True
-            jump sb_intro
+            jump sb_final
         "D4RK":
             $ incel_talk = True
-            jump D4RK_intro
+            jump gf_quest
         "eddi":
             $ edater_talk = True
-            jump eddi_intro
+            jump eddi_final
 
     
         

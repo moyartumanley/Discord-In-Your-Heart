@@ -176,9 +176,9 @@ label sb_rizz:
 
 # LABEL : SB_FINAL ================================================
 label sb_final:
-    user_uvl "ive thought about it for a long time. ill give you sometime to figure it out with your wife and stuff"
-    user_uvl "you're the best thing that has happened to me and i want you in my life"
-    user_uvl "i was also thinking"
+    user_nvl "ive thought about it for a long time. ill give you sometime to figure it out with your wife and stuff"
+    user_nvl "you're the best thing that has happened to me and i want you in my life"
+    user_nvl "i was also thinking"
 
     nvl_narrator "You are ready to ask the question to snugglebunny. You are going to ask to meet him in real life."
     nvl_narrator "Then right as you're about to ask him. Something happens."

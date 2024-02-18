@@ -103,6 +103,7 @@ label start:
         scene sunny
         "You turn off your phone and go outside, and let the sun hit your face."
         "Unfortunately, you have a lack of experience in navigating the outside world"
+        play sound "car_crash.mp3"
         "BANG!!!" with hpunch
         "You have been hit by a car. Given that you are uninsured and unwilling to call for an ambulance, you die of your injuries."
         
