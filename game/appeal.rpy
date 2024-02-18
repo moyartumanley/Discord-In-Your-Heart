@@ -18,7 +18,7 @@ label appeal:
         "snugglebunny":
             jump sb_intro
         "D4RK":
-            jump appeal
+            jump D4RK_intro
         "eddi":
             jump eddi_intro
             

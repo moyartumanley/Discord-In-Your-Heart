@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 107: expected statement.
-    renpy.movie_cutscene(death, delay=None, loops=0, stop_music=True)
-                                                                     ^
+File "game/D4RK_cont.rpy", line 151: expected ':' not found.
+    menu videogame date:
+                   ^
+
+File "game/D4RK_cont.rpy", line 241: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Become D4RK's discord kitten."
+                                   ^
+
+File "game/D4RK_cont.rpy", line 265: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    incel_nvl "Y-yeah! Lets play again together sometime! Let me unban you from the server as well, it's easier to vc in there."
+    ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sat Feb 17 14:31:44 2024
+Sun Feb 18 01:43:11 2024

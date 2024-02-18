@@ -12,7 +12,8 @@ define softie_nvl = Character("snugglebunni", kind=nvl, image="softie.png", call
 define edater_nvl = Character("eddi", kind=nvl, image="edater.png", callback=Discord_Ping)
 define incel_nvl = Character("D4RK", kind=nvl, image="incel.png", callback=Discord_Ping)
 
-define user_nvl = Character("[username]", kind=nvl, image="user.png", callback=Discord_Ping)
+#removed ping for YN since methinks pings only occur when other ppl msg u
+define user_nvl = Character("[username]", kind=nvl, image="user.png")
 default username = "neet246"
 
 define config.adv_nvl_transition = None
