@@ -98,7 +98,7 @@ label start:
     
     label outdoors:
         hide ban_msg
-        scene sunny
+        scene sky
         "You turn off your phone and go outside, and let the sun hit your face."
         "Unfortunately, you have a lack of experience in navigating the outside world"
         play sound "car_crash.mp3"
