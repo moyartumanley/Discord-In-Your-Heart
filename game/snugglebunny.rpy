@@ -148,7 +148,7 @@ label sb_rizz:
     nvl_narrator "You can't believe it. He confessed to you before you."
 
     user_nvl "I can't belive it."
-    user_uvl "im in love with you too"
+    user_nvl "im in love with you too"
 
     nvl_narrator "You guys become a 'thing'. You love him and vice versa. Getting banned from that server was the best thing that has EVER happened to you."
     nvl_narrator "But somethings not quite right."

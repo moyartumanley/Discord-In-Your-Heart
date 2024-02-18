@@ -10,18 +10,6 @@ define nvl_mode = "phone"
 # access element in list
 # user_nvl "[d_list[1]]"
 
-# SCREEN : EDDI_DISCORD SCREEN ================================================
-screen EddiDialogue():
-    
-    style_prefix "phoneFrame"
-
-    frame:
-        background "#424549"    
-        
-    # if d_list not empty, populate the last two messages. 
-
-    # proceed in text 
-
 # LABEL : EDDI_INTRO ================================================
 label eddi_intro:
     #call screen EddiDialogue()
