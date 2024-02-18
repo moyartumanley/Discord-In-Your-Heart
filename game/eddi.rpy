@@ -61,7 +61,7 @@ label eddi_who:
 # LABEL : EDDI_PLS ================================================
 label eddi_pls:
     "Now's the chance. You decide to ask for the unban."
-    user_nvl "could u ask them to unban me??"
+    user_nvl "could u unban me??"
     nvl_narrator "eddi types for awhile."
     play music "audio/heartbeat.mp3" volume 8.0 #play sound 
     "Your heart begins to beat."
@@ -103,29 +103,69 @@ label eddi_curious:
     user_nvl "dude"
     user_nvl "can u unban me now???"
     edater_nvl "oh sorry i thought the $20 was for another pic"
-    nvl_narrator "This isn't going to work. eddi's not interested in unbanning you..."
-    nvl_narrator "You need to take it up a notch..."
     # BREAK IN GAME
     jump pick_another_mod
 
-    # menu:
-    #     "{image=roblox_choice.png}":
-    #         jump eddi_roblox
-    #     "{image=legs_choice.png}":
-    #         jump eddi_legs
-    #     "{image=jollibee_choice.png}":
-    #         jump eddi_jolli
+
+# LABEL : EDDI_PICK ================================================
+    label eddi_pick:
+    "You decide that eddi is your best bet to getting unbanned." 
+    "You just need to take it up a notch and get him on your side." 
+    "Let's rizz him up!!" 
+    "Which picture should we send him?" 
+
+    menu:
+        "{image=roblox_choice.png}":
+            "February 14, 2024"
+            user_nvl "{image=roblox.png}"
+            jump eddi_roblox
+        "{image=legs_choice.png}":
+            "February 14, 2024"
+            user_nvl "{image=legs.png}"
+            jump eddi_legs
+
+
 
 # LABEL : EDDI_ROBLOX ================================================
     label eddi_roblox:
+    edater_nvl "whats up lol"
+    user_nvl "this could be us but you keep playing around :3" #TODO: insert cringe emoji
+    nvl_narrator "You cringe at yourself."
+    nvl_narrator "But it's all in a good day's work."
+    user_nvl "mmm if you're trying to suck up to me, it's not gonna werk"
+
+    "Oops. Looks like you suck."
+    "You're not too good at this romance stuff, are you?"
+    return 
+
         
 
 # LABEL : EDDI_LEGS ================================================
     label eddi_legs:
+        edater_nvl "what the lol"
+        user_nvl ":3 do u like the legs?"
+        user_nvl "they reminded me of the picture u sent~"
+        edater_nvl "LMAOOOOOOOOOO those were just hotdogs"
+        user_nvl "omg ur so funny"
+        user_nvl "..."
+        user_nvl "you know, i really liked talkign to u" #TODO: Insert cute emoji
+        user_nvl "but now that i'm not in the server,,,.. its been really lonely"
+        user_nvl "ive missed u"
+        nvl_narrator "eddi is typing"
+        nvl_narrator "You feel your heart beat faster and faster"
+        play music "audio/heartbeat.mp3" volume 8.0
+        nvl_narrator "do you perhaps have a heart condition...?"
+        edater_nvl "me too :)"
+        stop music 
+        nvl_narrator "it seems to have worked!!!!"
+        user_nvl "... do you perhaps want to be my bf"
+        #TODO: lame proposal picture
+        edater_nvl "omg... yes babeeeee"
+        edater_nvl "could you lend me $20"
+        "Yeah- this relationship was never meant to be"
+        "Nor was your existence in the server"
 
-# LABEL : EDDI_JOLLI ================================================
-    label eddi_jolli:
-        user_nvl "{image=jollibee.png}"
+        return
 
 
 

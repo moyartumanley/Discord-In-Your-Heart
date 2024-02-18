@@ -20,8 +20,11 @@ label D4RK_intro:
          jump gf_quest
       "No discord server is worth this… go outside and touch grass":
          jump D4RK_outside
+      "Talk to a different mod":
+         jump pick_another_mod
 
-label gf_quest:
+
+label gf_quest: #rizz label
    user_nvl "what the fuck is a girlfriend quest"
    incel_nvl "Hark former serverling! Listen to my plight!"
 
