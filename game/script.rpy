@@ -50,7 +50,6 @@ label start:
 
     # These display lines of dialogue.
     label intro:
-    show screen chat_bubbles()
     nvl_narrator "You're in your favorite discord server, populated with fellow chronically online (terminally online even) internet dwellers."
     nvl_narrator "Today's a good day. Your messages are getting ~5 reactions each with at least one being a laughing emoji. You Are On Cloud Nine!"
     nvl_narrator "But perhaps you get a little too bold.. and decide to post a meme"
@@ -69,7 +68,6 @@ label start:
 
     edater_nvl "uh oh didnt mean to ping the beast lmao"
 
-    hide screen chat_bubbles
     scene discord_darkgrey
     with Dissolve (0.6)
     show ban_msg
@@ -113,17 +111,10 @@ label start:
         "choose again :3"
 
         hide death
-
+ 
         jump meet_the_mods 
     # This ends the game.
 
 
-screen chat_bubbles():
-    vbox xalign 0.01 yalign 0.05:
-        spacing 20
-        imagebutton auto "icon_%s.png" action ShowMenu('save') #softie
-        imagebutton auto "icon_%s.png" action ShowMenu('save') #edater
-        imagebutton auto "icon_%s.png" action ShowMenu('save') #incel
-        imagebutton auto "icon_%s.png" action Jump('test_resume') #test
 
 

@@ -3,16 +3,9 @@ default edater_talk = False
 default incel_talk = False
 default softie_talk = False
 
-screen appeal_screen():
-    frame: 
-        background "#554509" 
-        text "WHAOOIF"
-        xfill False
-        yfill False
 
 label appeal:
     #maybe add ban appeal here or in a different file
-    show screen chat_bubbles()
     nvl clear
     "You groan in frustration."
     "You're going to have to suck up to these mods if you wanna get unbanned..."
