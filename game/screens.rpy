@@ -287,11 +287,11 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
+    hbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        xalign 0.6
+        yalign 0.9
 
         spacing gui.navigation_spacing
 
@@ -365,8 +365,8 @@ screen main_menu():
 
     if gui.show_name:
 
-        vbox:
-            style "main_menu_vbox"
+        hbox:
+            style "main_menu_hbox"
 
             text "[config.name!t]":
                 style "main_menu_title"
@@ -376,7 +376,7 @@ screen main_menu():
 
 
 style main_menu_frame is empty
-style main_menu_vbox is vbox
+style main_menu_hbox is hbox
 style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
@@ -385,9 +385,9 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    # background "gui/overlay/main_menu.png"
 
-style main_menu_vbox:
+style main_menu_hbox:
     xalign 1.0
     xoffset -30
     xmaximum 1200

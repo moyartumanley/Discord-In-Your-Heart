@@ -138,7 +138,7 @@ label sb_act:
     nvl_narrator "They're actually kinda sweet. You begin to see them as more than friends." 
     nvl_narrator "You open up to snugglebunny about your struggles in life and that was what caused you to break the rules in the server in the first place."
 
-    #Insert heart beat
+    play sound "audio/heartbeat.mp3" volume 8.0
 
     user_nvl "Hey, I've been meaning to tell you something..."
 
@@ -147,7 +147,7 @@ label sb_act:
     softie_nvl "i have smt to tell u"
     softie_nvl "im in love with you"
 
-    #Insert heart beat
+    play sound "audio/heartbeat.mp3" volume 8.0
 
     nvl_narrator "You can't believe it. He confessed to you before you."
 

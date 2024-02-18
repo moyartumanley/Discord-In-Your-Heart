@@ -25,7 +25,7 @@ define config.check_conflicting_properties = True
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#9933ff'
+define gui.accent_color = '#5765F2'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#888888'
@@ -35,7 +35,7 @@ define gui.idle_color = '#888888'
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#c184ff'
+define gui.hover_color = '#5765F2'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -88,7 +88,7 @@ define gui.title_text_size = 75
 
 ## The images used for the main and game menus.
 # define gui.main_menu_background = "gui/main_menu.png"
-define gui.main_menu_background = Movie(play="images/Discord In my heart.mp4")
+define gui.main_menu_background = Movie(play="images/Discord.av1.mp4")
 define gui.game_menu_background = "gui/game_menu.png"
 
 

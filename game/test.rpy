@@ -12,17 +12,17 @@ default last_message = Node("old message", test_nvl)
 default current_message = intro_0
             
 label test_resume:
-    # $ intro_0.insert(intro_1) # put intro_1 at the left branch
-    # $ intro_1.insert(intro_1a) # intro_1a should be left branch
-    # $ intro_1.insert(intro_1b) # intro_1b should be right branch
+    $ intro_0.insert(intro_1) # put intro_1 at the left branch
+    $ intro_1.insert(intro_1a) # intro_1a should be left branch
+    $ intro_1.insert(intro_1b) # intro_1b should be right branch
 
     nvl clear
     $ resume()
 
 label test_intro: 
-    # $ intro_0.insert(intro_1) # put intro_1 at the left branch
-    # $ intro_1.insert(intro_1a) # intro_1a should be left branch
-    # $ intro_1.insert(intro_1b) # intro_1b should be right branch
+    $ intro_0.insert(intro_1) # put intro_1 at the left branch
+    $ intro_1.insert(intro_1a) # intro_1a should be left branch
+    $ intro_1.insert(intro_1b) # intro_1b should be right branch
 
     "DOES THIS STILL WORK?? :()"
     # $ intro_0.insert(intro_1) # put intro_1 at the left branch
@@ -36,7 +36,7 @@ init python:
     
     def make_tree():
         global intro_0, intro_1, intro_1a, intro_1b
-        
+
         intro_0.insert(intro_1) # put intro_1 at the left branch
         intro_1.insert(intro_1a) # intro_1a should be left branch
         intro_1.insert(intro_1b) # intro_1b should be right branch
@@ -78,7 +78,7 @@ init python:
         # if last_message.message == "empty":
         #     renpy.jump('test_intro')
         # else:
-            make_tree()
+            # make_tree()
             generate_old_message(test_nvl, last_message)
             speak(current_message)
             
