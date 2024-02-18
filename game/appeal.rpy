@@ -15,12 +15,16 @@ label appeal:
     menu:
         "The question is... which mod?"
 
+        "test":
+            jump test_intro
+
         "snugglebunny":
             jump sb_intro
         "D4RK":
             jump D4RK_intro
         "eddi":
             jump eddi_intro
+            
             
         # "{image=icon_action.png} D4RK    ":
         #     jump appeal

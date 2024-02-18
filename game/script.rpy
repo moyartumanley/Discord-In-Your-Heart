@@ -110,5 +110,6 @@ screen chat_bubbles():
         imagebutton auto "icon_%s.png" action ShowMenu('save') #softie
         imagebutton auto "icon_%s.png" action ShowMenu('save') #edater
         imagebutton auto "icon_%s.png" action ShowMenu('save') #incel
+        imagebutton auto "icon_%s.png" action Jump('test_resume') #test
 
 
