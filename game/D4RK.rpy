@@ -20,7 +20,7 @@ label D4RK_intro:
          jump gf_quest
       "No discord server is worth this… go outside and touch grass":
          jump D4RK_outside
-      "Talk to a different mod":
+      "Talk to a different mod "if softie_talk == False or edater_talk == False:
          jump pick_another_mod
 
 
@@ -33,7 +33,7 @@ label gf_quest: #rizz label
    incel_nvl """
    From a young age, I’ve been a nice guy. Nothing but courteous to women. 
 
-   But you see, Y/N, women are attracted to bad boys. 
+   But you see, [username], women are attracted to bad boys. 
 
    I’m too respectful and courteous towards females– that’s why they’ll never go out with me. 
 

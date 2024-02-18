@@ -100,16 +100,18 @@ label start:
     
     label outdoors:
         hide ban_msg
+        scene sunny
         "You turn off your phone and go outside, and let the sun hit your face."
         "Unfortunately, you have a lack of experience in navigating the outside world"
         "BANG!!!" with hpunch
         "You have been hit by a car. Given that you are uninsured and unwilling to call for an ambulance, you die of your injuries."
+        
+        scene black
         show death
         with Dissolve (1.5)
         "choose again :3"
 
         hide death
-        scene black
 
         jump meet_the_mods 
     # This ends the game.
