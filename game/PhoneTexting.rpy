@@ -35,13 +35,14 @@ screen PhoneDialogue(dialogue, items=None):
                     use nvl_phonetext(dialogue,items)
                     null height 100
         # Button to progress
-        if len(items)==0: #If we don't have a menu
-            button:
-                padding (0,0)
-                add Solid("#ffda4a")
-                add Transform("continue_btn.png", align=(0.5,0.5))
-                action RollForward()
-        else:
+        # if len(items)==0: #If we don't have a menu
+        #     # button:
+        #     #     padding (0,0)
+        #     #     add Solid("#ffda4a")
+        #     #     add Transform("continue_btn.png", align=(0.5,0.5))
+        #     #     action RollForward()
+        # else:
+        if len(items)>0:
             # Phone Menu Choice
             frame:
                 background Solid("#ffda4a")

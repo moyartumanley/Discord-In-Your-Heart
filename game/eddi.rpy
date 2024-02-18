@@ -40,6 +40,8 @@ label eddi_intro:
         "Beg to be unbanned":
             jump eddi_pls
 
+    jump outdoors
+
 
 
 # LABEL : EDDI_WHO ================================================

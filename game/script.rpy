@@ -36,8 +36,6 @@ label start:
     $ username = renpy.input("What is your discord user? (or name if you're bold like that)")
     $ username = username.strip()
 
-    
-
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -52,6 +50,7 @@ label start:
 
     # These display lines of dialogue.
     label intro:
+    show screen chat_bubbles()
     nvl_narrator "You're in your favorite discord server, populated with fellow chronically online (terminally online even) internet dwellers."
     nvl_narrator "Today's a good day. Your messages are getting ~5 reactions each with at least one being a laughing emoji. You Are On Cloud Nine!"
     nvl_narrator "But perhaps you get a little too bold.. and decide to post a meme"
@@ -70,6 +69,7 @@ label start:
 
     edater_nvl "uh oh didnt mean to ping the beast lmao"
 
+    hide screen chat_bubbles
     scene discord_darkgrey
     with Dissolve (0.6)
     show ban_msg
@@ -85,19 +85,17 @@ label start:
 
     menu meet_the_mods:
         "Plead with one of the mods":
-            #jump appeal
+            jump appeal
             # call screen EddiDialogue
             # $ nvl_mode = "eddi"
-            nvl clear
-            jump eddi_intro
+            # nvl clear
+            # jump eddi_intro
 
 
         "There are other things in life more important than Discord. Go Outside!":
             jump outdoors
 
-    label appeal:
-        #maybe add ban appeal here or in a different file
-        nvl_narrator "ok"
+        
     return
     
     label outdoors:
@@ -115,5 +113,13 @@ label start:
 
         jump meet_the_mods 
     # This ends the game.
+
+
+screen chat_bubbles():
+    vbox xalign 0.01 yalign 0.05:
+        spacing 20
+        imagebutton auto "icon_%s.png" action ShowMenu('save') #softie
+        imagebutton auto "icon_%s.png" action ShowMenu('save') #edater
+        imagebutton auto "icon_%s.png" action ShowMenu('save') #incel
 
 
