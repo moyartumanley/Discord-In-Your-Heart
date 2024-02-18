@@ -15,12 +15,18 @@ label appeal:
 
         "snugglebunny" if softie_talk == False:
             $ softie_talk = True
+            show discord_bar:
+                xpos 90
             jump sb_intro
         "D4RK" if incel_talk == False:
             $ incel_talk = True
+            show discord_bar:
+                xpos 90
             jump D4RK_intro
         "eddi" if edater_talk == False:
             $ edater_talk = True
+            show discord_bar:
+                xpos 90
             jump eddi_intro
             
             
@@ -42,12 +48,18 @@ label pick_another_mod:
     menu:
         "snugglebunny" if softie_talk == False:
             $ softie_talk = True
+            show discord_bar:
+                xpos 90
             jump sb_intro
         "D4RK" if incel_talk == False:
             $ incel_talk = True
+            show discord_bar:
+                xpos 90
             jump D4RK_intro
         "eddi" if edater_talk == False:
             $ edater_talk = True
+            show discord_bar:
+                xpos 90
             jump eddi_intro
         
         #rizz label 
@@ -62,12 +74,18 @@ label final_pick:
     menu:
         "snugglebunny":
             $ softie_talk = True
+            show discord_bar:
+                xpos 90
             jump sb_rizz
         "D4RK":
             $ incel_talk = True
-            jump lock_in_D4RK
+            show discord_bar:
+                xpos 90
+            jump gf_quest
         "eddi":
             $ edater_talk = True
+            show discord_bar:
+                xpos 90
             jump eddi_final
 
     

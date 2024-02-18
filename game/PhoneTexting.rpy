@@ -154,8 +154,8 @@ style phoneFrame_frame:
     yfill True
     xfill True
     ysize 1080
-    xsize 1620
-    xoffset 300
+    xsize 1600
+    xoffset 230
 
     padding (20,0)
 

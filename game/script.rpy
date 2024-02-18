@@ -25,6 +25,7 @@ define nvl_mode = "phone"
 image death ="You Died.jpg"
 image ban_msg = "ban message.png"
 image discord_darkgrey = "#2D2F34"
+image discord_bar = "discord_bar.png"
 
 #SetScreenVariable = renpy.input("What is your name?", "neet246", length=32).strip()
 
@@ -50,6 +51,8 @@ label start:
 
     # These display lines of dialogue.
     label intro:
+    show discord_bar:
+        xpos 90
     nvl_narrator "You're in your favorite discord server, populated with fellow chronically online (terminally online even) internet dwellers."
     nvl_narrator "Today's a good day. Your messages are getting ~5 reactions each with at least one being a laughing emoji. You Are On Cloud Nine!"
     nvl_narrator "But perhaps you get a little too bold.. and decide to post a meme"
@@ -67,7 +70,8 @@ label start:
     incel_nvl "This is the third time you have done this @[username]. If you can't follow the simplest of rules, then we're going to have to ban you."
 
     edater_nvl "uh oh didnt mean to ping the beast lmao"
-
+    hide discord_darkgrey
+    
     scene discord_darkgrey
     with Dissolve (0.6)
     show ban_msg
@@ -114,7 +118,3 @@ label start:
  
         jump meet_the_mods 
     # This ends the game.
-
-
-
-
