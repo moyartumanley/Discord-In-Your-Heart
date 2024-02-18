@@ -35,7 +35,7 @@ label eddi_intro:
 
         "Play dumb":
             # jump appeal
-            jump eddi_intro
+            jump eddi_who
 
         "Beg to be unbanned":
             jump eddi_pls
@@ -44,10 +44,13 @@ label eddi_intro:
 
 # LABEL : EDDI_WHO ================================================
 label eddi_who:
+    user_nvl "who's dark..."
+
     jump outdoors
 
 # LABEL : EDDI_PLS ================================================
 label eddi_pls:
+    user_nvl "could u please unban me??"
     jump outdoors
 
 
