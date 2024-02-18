@@ -290,12 +290,13 @@ screen navigation():
     hbox:
         style_prefix "navigation"
 
-        xalign 0.6
-        yalign 0.9
-
+        #xalign 0.6
+        #yalign 0.9
         spacing gui.navigation_spacing
 
         if main_menu:
+            xalign 0.6
+            yalign 0.9
 
             textbutton _("Start") action Start()
 
@@ -314,6 +315,8 @@ screen navigation():
             textbutton _("End Replay") action EndReplay(confirm=True)
 
         elif not main_menu:
+            xalign 0.9
+            yalign 0.07
 
             textbutton _("Main Menu") action MainMenu()
 
