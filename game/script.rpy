@@ -8,9 +8,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define softie_nvl = Character("snugglebunni", kind=nvl, image="softie.png", callback=Discord_Ping)
-define edater_nvl = Character("eddi", kind=nvl, image="edater.png", callback=Discord_Ping)
-define incel_nvl = Character("D4RK", kind=nvl, image="incel.png", callback=Discord_Ping)
+define softie_nvl = Character("snugglebunni", kind=nvl, image="softie.jpg", callback=Discord_Ping)
+define edater_nvl = Character("eddi", kind=nvl, image="edater.jpg", callback=Discord_Ping)
+define incel_nvl = Character("D4RK", kind=nvl, image="incel.jpg", callback=Discord_Ping)
 
 #removed ping for YN since methinks pings only occur when other ppl msg u
 define user_nvl = Character("[username]", kind=nvl, image="user.png")
