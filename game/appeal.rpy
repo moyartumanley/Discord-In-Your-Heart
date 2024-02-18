@@ -62,7 +62,7 @@ label final_pick:
     menu:
         "snugglebunny":
             $ softie_talk = True
-            jump sb_final
+            jump sb_rizz
         "D4RK":
             $ incel_talk = True
             jump gf_quest

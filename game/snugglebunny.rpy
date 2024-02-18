@@ -44,7 +44,7 @@ label sb_intro:
 
 # LABEL : SB_UNBAN ================================================
 label sb_unban:
-    user_nvl "for real, can u unban me tho??"
+    user_nvl "for real, do you think u unban me??"
 
     softie_nvl "i dont know abt that… the other mods are v mad"
 
@@ -84,9 +84,19 @@ label sb_unban:
 label sb_act:
     user_nvl "thank u snuggles!! i just lost control :("
     
-    softie_nvl "pls dont apologize"
+    softie_nvl "pls dont apologize >.<"
     softie_nvl "theyre way too harsh"
 
+    nvl_narrator "It's working. Do you pile on more compliments or cut to the chase?"
+
+    menu: 
+        "youre literally the only mod that actually care about us.":
+            jump sb_cute
+        "for real, can u unban me tho??":
+            jump sb_unban
+
+# LABEL : SB_CUTE ================================================
+label sb_cute:
     user_nvl "youre literally the only mod that actually care about us."
     user_nvl "i appreciate you man"
 
@@ -95,7 +105,7 @@ label sb_act:
     softie_nvl "let me talk to the other mods and see if u can be unbanned"
 
     nvl_narrator "You plan is working. You didn't even need to ask to get unbanned. Flattery was enough for snugglebunny to do the hard work for you."
-    nvl_narrator "But maybe snugglebunny won't be enough. You might need to get one other mod to be on your side. Maybe try talking to the other mods?"
+    nvl_narrator "But maybe snugglebunny won't be enough. "
 
     jump pick_another_mod
 
@@ -172,10 +182,6 @@ label sb_rizz:
 
     nvl_narrator "You're at crossroads. You don't know if you should believe him or not. Do you want to talk to someone else?"
 
-    jump pick_another_mod
-
-# LABEL : SB_FINAL ================================================
-label sb_final:
     user_nvl "ive thought about it for a long time. ill give you sometime to figure it out with your wife and stuff"
     user_nvl "you're the best thing that has happened to me and i want you in my life"
     user_nvl "i was also thinking"
