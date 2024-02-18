@@ -113,11 +113,9 @@ label eddi_curious:
 
     menu:
         "{image=roblox_choice.png}":
-            "February 14, 2024"
             user_nvl "{image=roblox.png}"
             jump eddi_roblox
         "{image=legs_choice.png}":
-            "February 14, 2024"
             user_nvl "{image=legs.png}"
             jump eddi_legs
 
