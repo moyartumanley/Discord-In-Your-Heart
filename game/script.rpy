@@ -29,8 +29,7 @@ image discord_darkgrey = "#2D2F34"
 #SetScreenVariable = renpy.input("What is your name?", "neet246", length=32).strip()
 
 # The game starts here.
-label main_menu:
-    return
+# screen main_menu:
 
 label start:
     window hide
