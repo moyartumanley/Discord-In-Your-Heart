@@ -55,5 +55,27 @@ label pick_another_mod:
         "eddi" if edater_talk == False:
             $ edater_talk = True
             jump eddi_intro
+        
+        #rizz label 
+        "You've exhausted your options." if softie_talk and incel_talk and edater_talk:
+            "It seems like these moderators will need more than convincing..."
+            "Good thing love is an easy manipulating tool."
+            jump final_pick
+
+label final_pick:
+    "Pick one mod to rizz up:"
+    menu:
+        "snugglebunny":
+            $ softie_talk = True
+            jump sb_intro
+        "D4RK":
+            $ incel_talk = True
+            jump D4RK_intro
+        "eddi":
+            $ edater_talk = True
+            jump eddi_intro
+
+    
+        
 
     
