@@ -1303,6 +1303,8 @@ screen nvl(dialogue, items=None):
     #### ADD THIS TO MAKE THE phoneFrame_ WORK!! :) ###
     if nvl_mode == "phone":
         use PhoneDialogue(dialogue, items)
+    # elif nvl_mode == "eddi":
+    #     use EddiDialogue(dialogue, items)
     else:
     ####
     ## Indent the rest of the screen

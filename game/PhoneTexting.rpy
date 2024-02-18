@@ -86,7 +86,7 @@ screen nvl_phonetext(dialogue,items):
                         at message_narrator
             null height 30
         else:
-            $ message_frame = "#424549"
+            $ message_frame = "#424549" #THIS IS WHERE THE INDIVIDUAL MESSAGE IS
 
             hbox:
                 spacing 10

@@ -52,42 +52,45 @@ label start:
 
     # These display lines of dialogue.
     label intro:
-    nvl_narrator "You're in your favorite discord server, populated with fellow chronically online (terminally online even) internet dwellers."
-    nvl_narrator "Today's a good day. Your messages are getting ~5 reactions each with at least one being a laughing emoji. You Are On Cloud Nine!"
-    nvl_narrator "But perhaps you get a little too bold.. and decide to post a meme"
-    nvl_narrator "In" with vpunch
-    nvl_narrator "General" with vpunch
+    # nvl_narrator "You're in your favorite discord server, populated with fellow chronically online (terminally online even) internet dwellers."
+    # nvl_narrator "Today's a good day. Your messages are getting ~5 reactions each with at least one being a laughing emoji. You Are On Cloud Nine!"
+    # nvl_narrator "But perhaps you get a little too bold.. and decide to post a meme"
+    # nvl_narrator "In" with vpunch
+    # nvl_narrator "General" with vpunch
 
-    user_nvl "{image=hellochat.png}"
+    # user_nvl "{image=hellochat.png}"
 
-    nvl_narrator "You've flown too close to the sun. Now the mods are on you fr."
+    # nvl_narrator "You've flown too close to the sun. Now the mods are on you fr."
 
-    softie_nvl "a reminder! please no memes in gen chat!! (>_<)"
+    # softie_nvl "a reminder! please no memes in gen chat!! (>_<)"
 
-    edater_nvl "yah it makes @D4RK sad"
+    # edater_nvl "yah it makes @D4RK sad"
 
     incel_nvl "This is the third time you have done this @[username]. If you can't follow the simplest of rules, then we're going to have to ban you."
 
-    edater_nvl "uh oh didnt mean to ping the beast lmao"
+    # edater_nvl "uh oh didnt mean to ping the beast lmao"
 
-    scene discord_darkgrey
-    with Dissolve (0.6)
-    show ban_msg
-    with Dissolve (0.6)
+    # scene discord_darkgrey
+    # with Dissolve (0.6)
+    # show ban_msg
+    # with Dissolve (0.6)
 
-    pause(3.5)
+    # pause(3.5)
 
     "Uh Oh! Someone just got banned. Send in an appeal to one of the mods?"
 
-    hide ban_msg
-    scene black
-    with Dissolve (0.25)
+    # hide ban_msg
+    # scene black
+    # with Dissolve (0.25)
 
     menu meet_the_mods:
-
         "Plead with one of the mods":
             #jump appeal
-            call screen eddi_screen
+            # call screen EddiDialogue
+            # $ nvl_mode = "eddi"
+            nvl clear
+            jump eddi_intro
+
          
 
         "There are other things in life more important than Discord. Go Outside!":

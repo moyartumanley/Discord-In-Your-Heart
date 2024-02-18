@@ -1,6 +1,8 @@
 # eddi dialogue memory
 default d_list = []
 
+define nvl_mode = "phone"
+
 
 # appending to a list
 # $ d_list.append("1 one 1")
@@ -8,8 +10,21 @@ default d_list = []
 # access element in list
 # user_nvl "[d_list[1]]"
 
+# SCREEN : EDDI_DISCORD SCREEN ================================================
+screen EddiDialogue():
+    
+    style_prefix "phoneFrame"
+
+    frame:
+        background "#424549"    
+        
+    # if d_list not empty, populate the last two messages. 
+
+    # proceed in text 
+
 # LABEL : EDDI_INTRO ================================================
 label eddi_intro:
+    #call screen EddiDialogue()
     edater_nvl "I gifted u Nitro- sorry about getting kicked out"
     
     user_nvl "..."
@@ -18,32 +33,23 @@ label eddi_intro:
 
     menu:
 
-        "Plead with one of the mods":
+        "Play dumb":
             # jump appeal
             jump eddi_intro
 
-        "There are other things in life more important than Discord. Go Outside!":
-            jump ending
+        "Beg to be unbanned":
+            jump eddi_pls
 
-    jump ending
 
 
 # LABEL : EDDI_WHO ================================================
 label eddi_who:
-
-    jump ending
+    jump outdoors
 
 # LABEL : EDDI_PLS ================================================
 label eddi_pls:
-    jump ending
+    jump outdoors
 
-# SCREEN : EDDI_DISCORD SCREEN ================================================
-screen eddi_screen():
-    zorder 100
-    
-    # if d_list not empty, populate the last two messages. 
-
-    # proceed in text 
 
 
 
