@@ -46,13 +46,36 @@ label eddi_intro:
 
 # LABEL : EDDI_WHO ================================================
 label eddi_who:
-    user_nvl "who's dark..."
+    user_nvl "who's D4RK..."
+    edater_nvl "you don't kno D4RK?"
+    edater_nvl "this guy???"
+    # TODO: Profile picture!!
+    edater_nvl "he literally does all the announcement posts"
+    user_nvl "o"
+
+    menu:
+        "Beg to be unbanned":
+            # jump appeal
+            jump eddi_pls
 
     jump outdoors
 
 # LABEL : EDDI_PLS ================================================
 label eddi_pls:
-    user_nvl "could u please unban me??"
+    "Now's the chance. You decide to ask for the unban."
+    user_nvl "could u ask them to unban me??"
+    nvl_narrator "eddi types for awhile."
+    play music "audio/heartbeat.mp3" volume 8.0
+    "Your heart begins to beat."
+    "..."
+    "Is this... love? Anxiety??? Blood rushes to your head and.."
+    stop music 
+    edater_nvl "i can do it"
+    user_nvl "waaaaaa really!??!?1111 " #TODO: insert puppy eye emojis
+    edater_nvl "ya but since i gave u nitro, do you think u can do something for me?"
+    "You think really hard... you hope it's not a weird favor or request..."
+
+
     jump outdoors
 
 

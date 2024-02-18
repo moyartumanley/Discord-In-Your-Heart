@@ -10,6 +10,9 @@ init -1 python:
         if event == "show_done":
             renpy.sound.play("audio/discord_ping.mp3")
 
+    def Heartbeat(event, interact=True, **kwards):
+        renpy.sound.play("audio/heartbeat.wav")
+
 screen PhoneDialogue(dialogue, items=None):
 
     style_prefix "phoneFrame"
